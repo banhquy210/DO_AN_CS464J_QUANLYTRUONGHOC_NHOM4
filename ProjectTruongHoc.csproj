@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5EC71BD-C195-4286-87F0-8B5907605EA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectTruongHoc</RootNamespace>
+    <AssemblyName>ProjectTruongHoc</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_GiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GiaoVien.Designer.cs">
+      <DependentUpon>frm_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>frm_QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLyLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyLopHoc.Designer.cs">
+      <DependentUpon>frm_QuanLyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLySinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLySinhVien.Designer.cs">
+      <DependentUpon>frm_QuanLySinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLySinhVien_LopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLySinhVien_LopHoc.Designer.cs">
+      <DependentUpon>frm_QuanLySinhVien_LopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanTriVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanTriVien.Designer.cs">
+      <DependentUpon>frm_QuanTriVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SinhVien.Designer.cs">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TaiKhoanGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TaiKhoanGV.Designer.cs">
+      <DependentUpon>frm_TaiKhoanGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_TaiKhoanSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_TaiKhoanSV.Designer.cs">
+      <DependentUpon>frm_TaiKhoanSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_GiaoBaiTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_GiaoBaiTap.Designer.cs">
+      <DependentUpon>frm_GiaoBaiTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOPDUNGCHUNG.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DangNhap.Designer.cs">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_DangNhap.yo.resx">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GiaoBaiTap.resx">
+      <DependentUpon>frm_GiaoBaiTap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_GiaoVien.resx">
+      <DependentUpon>frm_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyGiaoVien.resx">
+      <DependentUpon>frm_QuanLyGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyLopHoc.resx">
+      <DependentUpon>frm_QuanLyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLySinhVien.resx">
+      <DependentUpon>frm_QuanLySinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLySinhVien_LopHoc.resx">
+      <DependentUpon>frm_QuanLySinhVien_LopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanTriVien.resx">
+      <DependentUpon>frm_QuanTriVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SinhVien.resx">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TaiKhoanGV.resx">
+      <DependentUpon>frm_TaiKhoanGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_TaiKhoanSV.resx">
+      <DependentUpon>frm_TaiKhoanSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_DangNhap.resx">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLLH.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QLLH_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QLLH.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
